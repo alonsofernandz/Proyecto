@@ -96,15 +96,17 @@
             padding: 15px 30px;
             border: none;
             background-color: rgb(96, 170, 192);
-            color: white;
+            color: rgb(255, 255, 255);
             border-radius: 6px;
             cursor: pointer;
             font-size: 16px;
             margin-top: 12%;
             box-shadow: 50px 50px 5px rgba(92, 99, 105, .2);
+            background-image: linear-gradient(to bottom, rgb(87, 133, 151), rgb(213, 236, 238));
         }
         
         .submitBtn:hover {
+            color: black;
             background-color: rgb(216, 94, 94);
             transform: translateY(-2px);
         }
@@ -121,9 +123,11 @@
             font-size: 16px;
             margin-top: -10%;
             box-shadow: 50px 50px 5px rgba(92, 99, 105, .2);
+            background-image: linear-gradient(to bottom, rgb(87, 133, 151), rgb(213, 236, 238));
         }
         
         .resetBtn:hover{
+            color: black;
             background-color: rgb(216, 94, 94);
             transform: translateY(-2px);
         }
@@ -149,8 +153,8 @@
         .input:focus {
             border: 2px solid rgb(90, 158, 179);
         }
-        a{
-            background-color: #4CAF50;
+        .botonx a{
+            background-color: rgb(64, 62, 180);
             border-radius: 10px;
             color: white;
             padding: 15px 30px;
@@ -159,11 +163,18 @@
             display: inline-block;
             font-size: 15px;
         }
+        .botonx a:hover{
+            background-color: rgb(216, 94, 94);
+            transform: translateX(-2px);
+        }
     </style>
 </head>
 <body>
-    <a href="index.html">Volver</a>
+    
     <div class="box">
+        <div class="botonx">
+            <a href="index.html">Volver</a>
+        </div>
         <div class="wrapper">
             <form action="" class="form">
               <h1 class="title">Inicio de sesion</h1>
