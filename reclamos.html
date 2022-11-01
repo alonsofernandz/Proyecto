@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout example · Bootstrap v5.2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/87493ae31f.js" crossorigin="anonymous"></script>
+    <link href="style-reclamo.css" rel="stylesheet">
+    
+</head>
+<body class="bg-light">
+<div class="container">
+  <main>
+    <div class="py-5 text-left" >
+      <h2>Libro de Reclamaciones</h2><br>
+      <p class="lead">Conforme a lo establecido en el código de la Protección y Defensa del 
+        consumidor este establecimiento cuenta con un Libro de Reclamaciones para registrar
+         únicamente tus quejas o reclamos. Sin embargo ponemos a tu disposición el correo 
+        <strong>atención@ventlib.com.pe</strong> a fin de que nos hagas llegar tus sugerencias, opiniones, 
+         consultas, entre otros.
+      </p>
+    </div>
+
+    <div class="row g-4 ">
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">1. Identificacion del cliente o consumidor</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Apellido Paterno</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Su apellido parterno es requerido.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Apellido Materno</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Su apellido materno es requerido.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="username" class="form-label">Nombres</label>
+              <div class="input-group has-validation">
+                <input type="text" class="form-control" id="username"  required>
+              <div class="invalid-feedback">
+                  Sus nombres son requeridos.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Direccion Completa</label>
+              <input type="email" class="form-control" id="email" placeholder="">
+              <div class="invalid-feedback">
+                Por favor, ingrese la dirección completa.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+                <select class="form-select" id="country" required>
+                    <option value="">Departamento</option>
+                    <option>United States</option>
+                    <option>United States</option>
+                    <option>United States</option>
+                    <option>United States</option>
+                    <option>United States</option>
+                    <option>United States</option>
+                </select>
+            </div>
+  
+            <div class="col-sm-6">
+                <select class="form-select" id="country" required>
+                    <option value="">Provincia</option>
+                    <option>United States</option>
+                    <option>United States</option>
+                    <option>United States</option>
+                    <option>United States</option>
+                    <option>United States</option>
+                    <option>United States</option>
+                    <option>United States</option>
+                </select>
+            </div>
+            <div class="col-sm-6">
+                <select class="form-select" id="country" required>
+                    <option value="">Distrito</option>
+                    <option>United States</option>
+                    <option>United States</option>
+                    <option>United States</option>
+                    <option>United States</option>
+                    <option>United States</option>
+                    <option>United States</option>
+                    <option>United States</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+            </div>
+            <div class="col-sm-6">
+                <select class="form-select" id="country" required>
+                    <option value="">Tipo de Documento</option>
+                    <option>United States</option>
+                    <option>United States</option>
+                    <option>United States</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <input type="email" class="form-control" id="email" placeholder="Ingrese su Documento">
+                <div class="invalid-feedback">
+                  Por favor, ingrese la dirección completa.
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <input type="email" class="form-control" id="email" placeholder="Ingrese su Telefono Fijo">
+                <div class="invalid-feedback">
+                Por favor, ingrese un numero correcto
+                </div>
+            </div>
+            <div class="col-md-6">
+                <input type="email" class="form-control" id="email" placeholder="Ingrese su Numero de Celular">
+                <div class="invalid-feedback">
+                Por favor, ingrese un numero correcto
+                </div>
+            </div>
+          </div><br>
+
+
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="same-address">
+            <label class="form-check-label" for="same-address">Menor de Edad</label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="save-info">
+            <label class="form-check-label" for="save-info">Mayor de Edad</label>
+          </div>
+          </form>
+      </div>
+    </div>
+    <hr class="my-4">
+    <div class="row g-5">
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3">2. Identificacion de producto o servicio</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row g-3">
+                <div class="col-sm-6">
+                    <select class="form-select" id="country" required>
+                        <option>Producto</option>
+                        <option>Servicio</option>
+                    </select>
+                </div>
+  
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="lastName" placeholder="Monto de reclamo" value="" required>
+                <div class="invalid-feedback">
+                  El monto es importante.
+                </div>
+              </div>
+  
+              <div class="col-6">
+                <div class="input-group has-validation">
+                  <input type="text" class="form-control" id="username" placeholder="Nro. de Boleta o Factura:" required>
+                <div class="invalid-feedback">
+                    El nro es importante.
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-6">
+                <input type="email" class="form-control" id="email" placeholder="Nro. de Pedido">
+                <div class="invalid-feedback">
+                    El nro es importante.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <input type="text" class="form-control" id="address" placeholder="Marca y Nombre del Producto" required>
+                <div class="invalid-feedback">
+                  Complete este campo, porfavor.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <textarea class="form-control" name="" id="" cols="80" rows="5" placeholder="Descripcion"></textarea>
+              </div>
+            </form>
+        </div>
+    </div>
+    <hr class="my-4">
+    <div class="row g-5">
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3">3. Detalle de reclamo o queja</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row g-3">
+                <div class="col-sm-6">
+                    <select class="form-select" id="country" required>
+                        <option>Reclamo</option>
+                        <option>Queja</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <input type="text" class="form-control" id="address" placeholder="Detalle" required>
+                    <div class="invalid-feedback">
+                      Complete este campo, porfavor.
+                    </div>
+                  </div>
+                <div class="col-12">
+                    <textarea class="form-control" name="" id="" cols="80" rows="5" placeholder="Descripcion"></textarea>
+                </div>
+            </form>
+        </div>
+    </div>
+    <button class="w-100 btn btn-primary btn-lg" type="submit">Enviar Queja o Reclamo</button>
+  </main>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2022 Ventlib</p>
+    
+  </footer>
+</div>
+<script src="reclamo.js"></script>
+  </body>
+</html>
